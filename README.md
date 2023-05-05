@@ -28,5 +28,10 @@ kv@kvPC MINGW64 /d/Homework/dir_1
 $ mkdir dir_1_1 dir_1_2 dir_1_3
 ```
 
-
-
+## 5. Go to any of new folders:
+Use command ```cd```
+```
+kv@kvPC MINGW64 /d/Homework/dir_1
+$ cd dir_1_2
+```
+## 6. Create 5 files (3 x .txt, 2 x .json):
