@@ -65,7 +65,38 @@ drwxr-xr-x 1 kv 197121 0 Apr 17 20:43 dir_1_2_3/
 ```
 ## 9. Open one of txt files
 ## 10. Write anything in this file &
-## 11. Save and quit:
+## 11. Save and quit
+
+Its possible to execute p.**9-11** 2 points with one command (```cat >``` or ```vim```)
+
+**1 way)** ```cat >``` command
+
+After writing command with name of file we adding its contents --> press `Ctrl+C` to save and quit
+```
+kv@kvPC MINGW64 /d/Homework/dir_1/dir_1_2
+$ cat > 3.txt
+Ты меня не любишь, не жалеешь,
+Разве я немного не красив?
+Не смотря в лицо, от страсти млеешь,
+Мне на плечи руки опустив.
+Молодая, с чувственным оскалом,
+Я с тобой не нежен и не груб.
+Расскажи мне, скольких ты ласкала?
+Сколько рук ты помнишь? Сколько губ?
+Зная я - они прошли, как тени,
+Не коснувшись твоего огня,
+Многим ты садилась на колени,
+А теперь сидишь вот у меня.
+```
+**2 way)** ```vim``` command
+
+
+
+
+
+
+
+
 
 
 
