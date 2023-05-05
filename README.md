@@ -69,9 +69,7 @@ drwxr-xr-x 1 kv 197121 0 Apr 17 20:43 dir_1_2_3/
 
 Its possible to execute p.**9-11** 2 points with one command (```cat >``` or ```vim```)
 
-**1 way)** ```cat >``` command
-
-After writing command with name of file we adding its contents --> press `Ctrl+C` to save and quit
+**1 way:** ```cat >``` command
 ```
 kv@kvPC MINGW64 /d/Homework/dir_1/dir_1_2
 $ cat > 3.txt
@@ -88,9 +86,19 @@ $ cat > 3.txt
 Многим ты садилась на колени,
 А теперь сидишь вот у меня.
 ```
-**2 way)** ```vim``` command
+After writing command with name of file we adding its contents --> press `Ctrl+C` to save and quit
+``Cat`` command outputs the contents of the file (so first we need to add this content)
+```Cat >``` - сreate and edit a file
+``Cat >>`` - to edit the contents of a file that has already been created
 
+**2 way:** ```vim``` command
+This command allows you to create and edit files:
+1. Type the **name of fime** and press ```ENTER```
+2. Press ``I`` to edit file
+3. Add the text
+4. Press ```Esc```, than ```Shift``` and write ```:wq```
 
+## 12. Go to the directory located 1 level above:
 
 
 
