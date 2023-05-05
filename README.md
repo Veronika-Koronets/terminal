@@ -8,29 +8,30 @@ $ pwd
 ```
 
 ## 2. Make a folder
-``mkdir`` foldername
+``mkdir`` foldername. **Mkdir** means *make directory*
 ```
 kv@kvPC MINGW64 /d/Homework
 $ mkdir folder
 ```
 
 ## 3. Go to the folder
-```cd``` foldername
+```cd``` foldername. **Cd** means *change directory*
 ```
 kv@kvPC MINGW64 /d/Homework
 $ cd folder
 ```
 
 ## 4. Make 3 new folders
-We using the command we already know ```mkdir``` and type the names of new directories separated by space
+We using the command we already know ```mkdir``` **foldername** and type the names of new directories separated by space. 
 ```
 kv@kvPC MINGW64 /d/HW/folder
 $ mkdir folder_1 folder_2 folder_3
 ```
 
 ## 5. Go to any of new folders:
-Using command ```cd``` with the name of folder
-```cd ..`` - switch to parent directory
+Using command ```cd``` **foldername** with the name of folder, to which we want to go
+
+``cd ..`` - switch to parent directory
 ```
 
 kv@kvPC MINGW64 /d/HW/folder
@@ -38,13 +39,13 @@ $ cd folder_1
 ```
 
 ## 6. Create 5 files (3 x .txt, 2 x .json)
-In such case we can use command `touch` and write names of new files separetad by space **indicating their formats**
+In such case we can use command `touch` **name** and write names of new files separetad by space **indicating their formats**
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ touch 1.txt 2.txt 3.txt 1.json 2.json
 ```
 ## 7. Make 3 folders
-(look p.4) Using ```mkdir``` command and type the names of new directories separated by space
+(look p.4) Using ```mkdir``` **foldername** command and type the names of new directories separated by space
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ mkdir dir_1_2_1 dir_1_2_2 dir_1_2_3
@@ -76,9 +77,9 @@ $ cat > 1.txt
 Я с тобой не нежен и не груб.
 ```
 After writing command with name of file we adding its contents --> press `Ctrl+C` to save and quit
-``Cat`` command outputs the contents of the file (so first we need to add this content)
-``Cat >``` - сreate and edit a file
-``Cat >>`` - to edit the contents of a file that has already been created
+``Cat`` **name** command outputs the contents of the file (so first we need to add this content)
+``Cat >``` **name** - сreate and edit a file
+``Cat >>`` **name** - to edit the contents of a file that has already been created
 
 **2 way:** ```vim``` command
 This command allows you to create and edit files:
@@ -98,7 +99,7 @@ $ pwd
 /d/HW/folder
 ```
 ## 13. 
-To move files using ```mv``` **names** command
+To move files using ```mv``` **names** command. Mv means *move*
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ mv {2.txt,3.txt} new_folder_1
