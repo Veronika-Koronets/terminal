@@ -76,9 +76,12 @@ $ cat > 1.txt
 Молодая, с чувственным оскалом,
 Я с тобой не нежен и не груб.
 ```
-After writing command with name of file we adding its contents --> press `Ctrl+C` to save and quit
+After writing command with name of file we adding its contents --> press `Ctrl+C` to save and quit.
+
 ``Cat`` **name** command outputs the contents of the file (so first we need to add this content)
-``Cat >``` **name** - сreate and edit a file
+
+``Cat >`` **name** - сreate and edit a file
+
 ``Cat >>`` **name** - to edit the contents of a file that has already been created
 
 **2 way:** ```vim``` command
