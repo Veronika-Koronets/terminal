@@ -11,58 +11,53 @@ $ pwd
 ``mkdir`` foldername
 ```
 kv@kvPC MINGW64 /d/Homework
-$ mkdir dir_1
+$ mkdir folder
 ```
 
 ## 3. Go to the folder
 ```cd``` foldername
 ```
 kv@kvPC MINGW64 /d/Homework
-$ cd dir_1
+$ cd folder
 ```
 
 ## 4. Make 3 new folders
 We using the command we already know ```mkdir``` and type the names of new directories separated by space
 ```
-kv@kvPC MINGW64 /d/Homework/dir_1
-$ mkdir dir_1_1 dir_1_2 dir_1_3
+kv@kvPC MINGW64 /d/HW/folder
+$ mkdir folder_1 folder_2 folder_3
 ```
 
 ## 5. Go to any of new folders:
-Using command ```cd```
+Using command ```cd``` with the name of folder
+```cd ..`` - switch to parent directory
 ```
-kv@kvPC MINGW64 /d/Homework/dir_1
-$ cd dir_1_2
+
+kv@kvPC MINGW64 /d/HW/folder
+$ cd folder_1
 ```
+
 ## 6. Create 5 files (3 x .txt, 2 x .json)
 In such case we can use command `touch` and write names of new files separetad by space **indicating their formats**
 ```
-kv@kvPC MINGW64 /d/Homework/dir_1/dir_1_2
+kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ touch 1.txt 2.txt 3.txt 1.json 2.json
 ```
 ## 7. Make 3 folders
 (look p.4) Using ```mkdir``` command and type the names of new directories separated by space
 ```
-kv@kvPC MINGW64 /d/Homework/dir_1/dir_1_2
+kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ mkdir dir_1_2_1 dir_1_2_2 dir_1_2_3
 ```
+
 ## 8. Show the contents of current folder elements
-Now we r located in **dir_1_2**. To see folder contents we using ```ls``` or ```ls -la``` commands
+Now we r located in **folder_1**. To see folder contents we using ```ls``` or ```ls -la``` commands
 ```
-kv@kvPC MINGW64 /d/Homework/dir_1/dir_1_2
-$ ls -la
-total 4
-drwxr-xr-x 1 kv 197121 0 Apr 17 20:43 ./
-drwxr-xr-x 1 kv 197121 0 Apr 17 20:40 ../
--rw-r--r-- 1 kv 197121 0 Apr 17 20:42 1.json
--rw-r--r-- 1 kv 197121 0 Apr 17 20:42 1.txt
--rw-r--r-- 1 kv 197121 0 Apr 17 20:42 2.json
--rw-r--r-- 1 kv 197121 0 Apr 17 20:42 2.txt
--rw-r--r-- 1 kv 197121 0 Apr 17 20:42 3.txt
-drwxr-xr-x 1 kv 197121 0 Apr 17 20:43 dir_1_2_1/
-drwxr-xr-x 1 kv 197121 0 Apr 17 20:43 dir_1_2_2/
-drwxr-xr-x 1 kv 197121 0 Apr 17 20:43 dir_1_2_3/
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ ls
+1.json  1.txt  2.json  2.txt  3.txt  new_folder_1/  new_folder_2/  new_folder_3/
 ```
+
 ## 9. Open one of txt files
 ## 10. Write anything in this file &
 ## 11. Save and quit
@@ -71,24 +66,18 @@ Its possible to execute p.**9-11** 2 points with one command (```cat >``` or ```
 
 **1 way:** ```cat >``` command
 ```
-kv@kvPC MINGW64 /d/Homework/dir_1/dir_1_2
-$ cat > 3.txt
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ cat > 1.txt
 Ты меня не любишь, не жалеешь,
 Разве я немного не красив?
 Не смотря в лицо, от страсти млеешь,
 Мне на плечи руки опустив.
 Молодая, с чувственным оскалом,
 Я с тобой не нежен и не груб.
-Расскажи мне, скольких ты ласкала?
-Сколько рук ты помнишь? Сколько губ?
-Зная я - они прошли, как тени,
-Не коснувшись твоего огня,
-Многим ты садилась на колени,
-А теперь сидишь вот у меня.
 ```
 After writing command with name of file we adding its contents --> press `Ctrl+C` to save and quit
 ``Cat`` command outputs the contents of the file (so first we need to add this content)
-```Cat >``` - сreate and edit a file
+``Cat >``` - сreate and edit a file
 ``Cat >>`` - to edit the contents of a file that has already been created
 
 **2 way:** ```vim``` command
@@ -99,7 +88,32 @@ This command allows you to create and edit files:
 4. Press ```Esc```, than ```Shift``` and write ```:wq```
 
 ## 12. Go to the directory located 1 level above:
+Using ```cd ..```
+``` 
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ cd ..
 
+kv@kvPC MINGW64 /d/HW/folder
+$ pwd
+/d/HW/folder
+```
+## 13. 
+To move files using ```mv``` **names** command
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ mv {2.txt,3.txt} new_folder_1
+```
+
+## 14. 
+
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ cp {1.json,2.json} new_folder_3
+
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ ls
+1.json  1.txt  2.json  new_folder_1/  new_folder_2/  new_folder_3/
+```
 
 
 
