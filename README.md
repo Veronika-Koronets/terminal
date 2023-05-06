@@ -119,11 +119,35 @@ $ ls
 1.json  1.txt  2.json  new_folder_1/  new_folder_2/  new_folder_3/
 ```
 
+## 15.
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ find -name 1.txt
+./1.txt
+```
+
+## 16. Show file content in real time, filtered by a keyword 
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ tail -f 1.txt
+Ты меня не любишь, не жалеешь,
+Разве я немного не красив?
+Не смотря в лицо, от страсти млеешь,
+Мне на плечи руки опустив.
+Молодая, с чувственным оскалом,
+Я с тобой не нежен и не груб.
 
 
+## 17. Show several of the first lines from the text file:
+## 18. Show several of the last lines from the text file
+## 19. Show content of a large file
+## 20. Show current date and time
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ date
 
-
-
+Tue Apr 18 23:57:18 RTZ 2023
+```
 
 
 
