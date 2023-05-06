@@ -101,15 +101,17 @@ kv@kvPC MINGW64 /d/HW/folder
 $ pwd
 /d/HW/folder
 ```
-## 13. 
-To move files using ```mv``` **names** command. Mv means *move*
+## 13. Move any 2 files you created to any other folder
+To move files using ```mv``` **names** command. To move several folders from folder, where we are at a time we need to write them in ``{}`` and type name of folder, IN WHICH we will moving folders
+
+Mv means *move*
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ mv {2.txt,3.txt} new_folder_1
 ```
 
-## 14. 
-
+## 14. Copy any 2 files you created to any other folder
+To copy files using ```cp``` **names** command. To copy several files look **p.13**
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ cp {1.json,2.json} new_folder_3
@@ -119,7 +121,16 @@ $ ls
 1.json  1.txt  2.json  new_folder_1/  new_folder_2/  new_folder_3/
 ```
 
-## 15.
+## 15. Find file by name
+Using ``find`` command. 
+``find -name file1.txt``
+``find -name *.png``
+``find -type d *(or f)* -name "folder*"`` f-findng file, d-finding directory 
+""folder*" -
+*n -
+n*
+
+Indication ``.`` means finding in current directory  
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ find -name 1.txt
@@ -136,7 +147,7 @@ $ tail -f 1.txt
 Мне на плечи руки опустив.
 Молодая, с чувственным оскалом,
 Я с тобой не нежен и не груб.
-
+```
 
 ## 17. Show several of the first lines from the text file:
 ## 18. Show several of the last lines from the text file
@@ -148,7 +159,7 @@ $ date
 
 Tue Apr 18 23:57:18 RTZ 2023
 ```
-
+## 21. Send http request to server
 
 
 
