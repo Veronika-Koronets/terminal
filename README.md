@@ -123,21 +123,24 @@ $ ls
 
 ## 15. Find file by name
 Using ``find`` command. 
-``find -name file1.txt``
-``find -name *.png``
-``find -type d *(or f)* -name "folder*"`` f-findng file, d-finding directory 
-""folder*" -
-*n -
-n*
-
-Indication ``.`` means finding in current directory  
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ find -name 1.txt
 ./1.txt
 ```
+**PS** ``find -name file1.txt`` - search by name
+``find -name *.png`` - search by file extension
+``find -type d *(or f)* -name "folder*"`` - search by name of file (f-searching file, d-searching directory )
+```""folder*"``` - means search smth with name *folder* at the beginning
+```*n``` - means search smth with *n* in the name of file
+``n*`` - means search smth with *n* at the beginning 
+
+Indication ``.`` after *find* means finding in current directory  f.ex. ``find. -name file1.txt``
 
 ## 16. Show file content in real time, filtered by a keyword 
+Use combination of ``tail`` and ``grep`` command. 
+
+``Grep`` - search information by **text** pattern **INSIDE** file
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ tail -f 1.txt
