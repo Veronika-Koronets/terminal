@@ -129,17 +129,22 @@ $ find -name 1.txt
 ./1.txt
 ```
 **PS** ``find -name file1.txt`` - search by name
+
 ``find -name *.png`` - search by file extension
+
 ``find -type d *(or f)* -name "folder*"`` - search by name of file (f-searching file, d-searching directory )
+
 ```""folder*"``` - means search smth with name *folder* at the beginning
+
 ```*n``` - means search smth with *n* in the name of file
+
 ``n*`` - means search smth with *n* at the beginning 
 
 Indication ``.`` after *find* means finding in current directory  f.ex. ``find. -name file1.txt``
 
 ## 16. Show file content in real time, filtered by a keyword 
 Use combination of ``tail`` and ``grep`` command. 
-
+``Tail`` - 
 ``Grep`` - search information by **text** pattern **INSIDE** file
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
