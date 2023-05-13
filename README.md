@@ -134,21 +134,21 @@ $ find -name 1.txt
 
 ``find -type d *(or f)* -name "folder*"`` - search by name of file (f-searching file, d-searching directory )
 
-``""folder*"`` - means search smth with name *folder* at the beginning
+``"folder*"`` - means search smth with name *folder* at the beginning
 
 ```*n``` - means search smth with *n* in the name of file
 
-``n*`` - means search smth with *n* at the beginning 
+``n*`` - means search smth with *n* at the beginning in the name of file 
 
 Indication ``.`` after *find* means finding in current directory  f.ex. ``find. -name file1.txt``
 
 ## 16. Show file content in real time, filtered by a keyword 
-
 **``Tail``** - shows 10 last lines by default.
 if we add ``-f`` ``(tail -f)`` - information will be updated as new lines appear in the file
  
-Using combination of ``tail`` and ``grep`` command we can filter the search by keyword
-``` tail -f **name of file** | grep **key word** ```  - filter the search 
+**P.S.** Using combination of ``tail`` and ``grep`` command we can filter the search by keyword
+``` tail -f **name of file** | grep **key word** ```  
+
 **``Grep``** - search information by **text** pattern **INSIDE** file.
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
