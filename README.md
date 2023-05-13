@@ -33,7 +33,6 @@ Using command ```cd``` **foldername** with the name of folder, to which we want 
 
 ``cd ..`` - switch to parent directory
 ```
-
 kv@kvPC MINGW64 /d/HW/folder
 $ cd folder_1
 ```
@@ -225,7 +224,7 @@ Tue Apr 18 23:57:18 RTZ 2023
 ```
 ## 21. Send http request to server
 http://162.55.220.72:5005/terminal-hw-request
-```kv@kvPC MINGW64 /d/HW/folder/folder_1
+``kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ curl -X POST http://162.55.220.72:5005/terminal-hw-request
 ``
 And the responce is:
