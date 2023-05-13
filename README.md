@@ -224,7 +224,9 @@ Tue Apr 18 23:57:18 RTZ 2023
 ```
 ## 21. Send http request to server
 http://162.55.220.72:5005/terminal-hw-request
-``kv@kvPC MINGW64 /d/HW/folder/folder_1
+
+``
+kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ curl -X POST http://162.55.220.72:5005/terminal-hw-request
 ``
 And the responce is:
@@ -236,4 +238,4 @@ And the responce is:
 <h1>Not Found</h1>
 <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
 ``
-
+## 22. Write a bash script which does the steps above (# 3-8, # 13) ?????
