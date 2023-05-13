@@ -182,7 +182,7 @@ kkk
 
 
 ## 17. Show several of the first lines from the text file:
-``head`` **file** command shows first 10 strings by default
+``head`` **file** command shows FIRST 10 strings by default
 `` head -n 4 file `` - show specified number of strigns after ``-n``
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
@@ -194,8 +194,10 @@ $ head -n 4 1.txt
 ```
 
 ## 18. Show several of the last lines from the text file
-Like ``head`` command ``tail`` shows 10 strings by default
-``
+``tail``command shows LAST 10 strings by default.
+
+``tail -n 4 file `` - show specified number of strigns after ``-n``
+```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ tail -n 5 1.txt
 
@@ -203,6 +205,16 @@ jjjj
 
 ```
 ## 19. Show content of a large file
+Open the file with ``less`` command. 
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ less 1.txt
+```
+``less [options] file``
+Options can be:
+  - `` N `` to show string numbers
+  - `` /name `` to find "name" in file
+  
 ## 20. Show current date and time
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
