@@ -146,10 +146,6 @@ Indication ``.`` after *find* means finding in current directory  f.ex. ``find. 
 **``Tail``** - shows 10 last lines by default.
 if we add ``-f`` ``(tail -f)`` - information will be updated as new lines appear in the file
  
-**P.S.** Using combination of ``tail`` and ``grep`` command we can filter the search by keyword
-``` tail -f **name of file** | grep **key word** ```  
-
-**``Grep``** - search information by **text** pattern **INSIDE** file.
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ tail -f 1.txt
@@ -160,9 +156,52 @@ $ tail -f 1.txt
 Молодая, с чувственным оскалом,
 Я с тобой не нежен и не груб.
 ```
+Then open this file it Notepad and add some new strings. 
+
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ tail -f 1.txt
+Ты меня не любишь, не жалеешь,
+Разве я немного не красив?
+Не смотря в лицо, от страсти млеешь,
+Мне на плечи руки опустив.
+Молодая, с чувственным оскалом,
+Я с тобой не нежен и не груб.
+
+
+jjjj
+
+
+kkk
+```
+
+**P.S.** Using combination of ``tail`` and ``grep`` command we can filter the search by keyword
+``` tail -f **name of file** | grep **key word** ```  
+
+**``Grep``** - search information by **text** pattern **INSIDE** file.
+
 
 ## 17. Show several of the first lines from the text file:
+``head`` **file** command shows first 10 strings by default
+`` head -n 4 file `` - show specified number of strigns after ``-n``
+```
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ head -n 4 1.txt
+Ты меня не любишь, не жалеешь,
+Разве я немного не красив?
+Не смотря в лицо, от страсти млеешь,
+Мне на плечи руки опустив.
+```
+
 ## 18. Show several of the last lines from the text file
+Like ``head`` command ``tail`` shows 10 strings by default
+``
+kv@kvPC MINGW64 /d/HW/folder/folder_1
+$ tail -n 5 1.txt
+
+jjjj
+
+```
 ## 19. Show content of a large file
 ## 20. Show current date and time
 ```
