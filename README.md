@@ -128,13 +128,13 @@ kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ find -name 1.txt
 ./1.txt
 ```
-**PS** ``find -name file1.txt`` - search by name
+**PS** ``find -name file1.txt `` - search by name
 
 ``find -name *.png`` - search by file extension
 
 ``find -type d *(or f)* -name "folder*"`` - search by name of file (f-searching file, d-searching directory )
 
-```""folder*"``` - means search smth with name *folder* at the beginning
+``""folder*"`` - means search smth with name *folder* at the beginning
 
 ```*n``` - means search smth with *n* in the name of file
 
@@ -143,9 +143,13 @@ $ find -name 1.txt
 Indication ``.`` after *find* means finding in current directory  f.ex. ``find. -name file1.txt``
 
 ## 16. Show file content in real time, filtered by a keyword 
-Use combination of ``tail`` and ``grep`` command. 
-``Tail`` - 
-``Grep`` - search information by **text** pattern **INSIDE** file
+
+**``Tail``** - shows 10 last lines by default.
+if we add ``-f`` ``(tail -f)`` - information will be updated as new lines appear in the file
+ 
+Using combination of ``tail`` and ``grep`` command we can filter the search by keyword
+``` tail -f **name of file** | grep **key word** ```  - filter the search 
+**``Grep``** - search information by **text** pattern **INSIDE** file.
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ tail -f 1.txt
