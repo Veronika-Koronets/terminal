@@ -281,9 +281,15 @@ $ find $(pwd) -name "*tf*"
 ```
 
 ## 22. Find the paths to files that have "tf" in their name with letters in any register
-``
-
-``
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ find $(pwd) -iname "*tf*"
+/d/github_lesson/terminal2/dir_1/inner_dir_1/tf_3.txt
+/d/github_lesson/terminal2/dir_1/inner_dir_1/tf_4.txt
+/d/github_lesson/terminal2/dir_1/inner_dir_1/tf_5.txt
+/d/github_lesson/terminal2/dir_1/tf_1.txt
+/d/github_lesson/terminal2/dir_1/tf_2.txt
+```
 ## 23.
 ## 24.
 ## 25.
@@ -293,6 +299,28 @@ $ find $(pwd) -name "*tf*"
 ## 29.
 ## 30.
 ## 31.
+
+## 33. 
+Вывести в терминал 4 последних строк любого текстового файла
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ tail -n 4 inner_dir_1/tf_3.txt
+frog
+the second 2
+the sec 2
+the SeCoNd 2
+```
+
+## 34.
+Вывести в терминал 4 первые строки любого текстового файла.
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ head -n 4 tf_2.txt
+the first 1
+the second 2
+the third 3
+the sec 3
+```
 
 
 
