@@ -94,7 +94,6 @@ kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
 $ cat >> tf_3.txt
 the sec 2
 
-
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
 $ cat tf_3.txt
 cat
@@ -123,7 +122,6 @@ the sec 3
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
 $ cat >> tf_3.txt
 the SeCoNd 2
-
 
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
 $ cat tf_3.txt
@@ -160,7 +158,6 @@ $ cat > tf_4.txt
 13
 14
 15
-
 
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
 $ cat tf_4.txt
