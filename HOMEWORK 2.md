@@ -290,16 +290,95 @@ $ find $(pwd) -iname "*tf*"
 /d/github_lesson/terminal2/dir_1/tf_1.txt
 /d/github_lesson/terminal2/dir_1/tf_2.txt
 ```
-## 23.
-## 24.
-## 25.
-## 26.
+## 23. Find lines in files that contain the letter combination "sec" in the current folder
+есть файлы еще и в папке иннер дир 1 котора внутри
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -r sec
+inner_dir_1/tf_3.txt:the second 2
+inner_dir_1/tf_3.txt:the sec 2
+tf_2.txt:the second 2
+tf_2.txt:the sec 3
+```
+
+## 24. Find lines in files that contain the letter combination "sec" IN ANY REGISTER in the current folder:
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -ir sec
+inner_dir_1/tf_3.txt:the second 2
+inner_dir_1/tf_3.txt:the sec 2
+inner_dir_1/tf_3.txt:the SeCoNd 2
+tf_2.txt:the second 2
+tf_2.txt:the sec 3
+tf_2.txt:the seConD 2
+```
+
+## 25. Find lines in files that contain ONLY the letter combination "sec" in the current folder
+``./*`` - поиск в текущей директории
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -w "sec" ./*
+grep: ./inner_dir_1: Is a directory
+./tf_2.txt:the sec 3
+``` 
+or
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -r -w "sec"
+inner_dir_1/tf_3.txt:the sec 2
+tf_2.txt:the sec 3
+```
+
+## 26. Find lines in files that contain ONLY the letter combination "sec" IN ANY REGISTER in the current folder
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -iw "sec" ./*
+grep: ./inner_dir_1: Is a directory
+./tf_2.txt:the sec 3
+```
+or
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -R -iw "sec"
+inner_dir_1/tf_3.txt:the sec 2
+tf_2.txt:the sec 3
+```
+
 ## 27.
+```kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -r second
+inner_dir_1/tf_3.txt:the second 2
+tf_2.txt:the second 2
+```
+or
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep second ./*
+grep: ./inner_dir_1: Is a directory
+./tf_2.txt:the second 2
+```
 ## 28.
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -i second ./*
+grep: ./inner_dir_1: Is a directory
+./tf_2.txt:the second 2
+./tf_2.txt:the seConD 2
+```
+or
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -ir second ./*
+./inner_dir_1/tf_3.txt:the second 2
+./inner_dir_1/tf_3.txt:the SeCoNd 2
+./tf_2.txt:the second 2
+./tf_2.txt:the seConD 2
+```
+
 ## 29.
 ## 30.
 ## 31.
-
+## 32.
 ## 33. 
 Вывести в терминал 4 последних строк любого текстового файла
 ```
@@ -322,6 +401,18 @@ the third 3
 the sec 3
 ```
 
+
+## 40. Display the line "Good job!!" in terminal
+Output a text string in the terminal
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ echo Good job!
+```
+```
+and the answer is:
+Good job!
+
+```
 
 
 
