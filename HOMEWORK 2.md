@@ -3,13 +3,9 @@
 ``
 kv@kvPC MINGW64 /d/github_lesson
 $ mkdir terminal2
-``
 
-``
 kv@kvPC MINGW64 /d/github_lesson
 $ cd terminal2
-``
-``
 
 kv@kvPC MINGW64 /d/github_lesson/terminal2
 $ mkdir dir_1
