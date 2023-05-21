@@ -447,10 +447,50 @@ the third 3
 the sec 3
 ```
 
-## 35. Command in one line. Create a folder and create a text file with the contents.
+## 35. One-line command. Create a folder and create a text file with the contents.
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ mkdir folder1 && echo "hello" > 1.txt
 
-## 36.
-## 37.
+$ ls -la
+total 8
+drwxr-xr-x 1 kv 197121  0 May 21 14:57 ./
+drwxr-xr-x 1 kv 197121  0 May 16 19:00 ../
+-rw-r--r-- 1 kv 197121  7 May 21 14:57 1.txt
+-rw-r--r-- 1 kv 197121  4 May 21 14:56 2.txt
+drwxr-xr-x 1 kv 197121  0 May 21 14:57 folder1/
+drwxr-xr-x 1 kv 197121  0 May 21 14:56 folder2/
+drwxr-xr-x 1 kv 197121  0 May 18 20:44 inner_dir_1/
+-rw-r--r-- 1 kv 197121  0 May 16 19:01 tf_1.txt
+-rw-r--r-- 1 kv 197121 60 May 18 19:31 tf_2.txt
+-rw-r--r-- 1 kv 197121  4 May 21 14:48 tf_35.txt
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ cat 1.txt
+hello
+```
+or
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ mkdir folder2 && cat > folder2/2.txt
+1234
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ cat folder2/2.txt
+1234
+```
+or 
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ mkdir folder3 && echo "Hello user" > folder3/3.txt
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ cat folder3/3.txt
+Hello user
+```
+
+## 36. One-line command. Move all text files that contain the word "sec" in their content to any single folder.
+## 37. 
 ## 38.
 ## 39.
 
