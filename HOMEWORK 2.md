@@ -375,7 +375,8 @@ $ grep second ./*/*
 ## 30. Find only the path and file name in lines that contain the letter combination "second" in the current folder
  ``-l`` - shows only **files** with matches, 
  ``-s`` - to show without message
-````
+ 
+```
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
 $ grep -ls second ./* $PWD
 ./tf_2.txt
@@ -436,8 +437,7 @@ the sec 2
 the SeCoNd 2
 ```
 
-## 34.
-Вывести в терминал 4 первые строки любого текстового файла.
+## 34. Show last 4 strings of any text file
 ```
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
 $ head -n 4 tf_2.txt
@@ -447,6 +447,12 @@ the third 3
 the sec 3
 ```
 
+## 35. Command in one line. Create a folder and create a text file with the contents.
+
+## 36.
+## 37.
+## 38.
+## 39.
 
 ## 40. Display the line "Good job!!" in terminal
 Output a text string in the terminal
