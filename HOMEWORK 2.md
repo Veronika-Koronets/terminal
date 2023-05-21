@@ -489,8 +489,32 @@ $ cat folder3/3.txt
 Hello user
 ```
 
-## 36. One-line command. Move all text files that contain the word "sec" in their content to any single folder.
-## 37. 
+## 36. One-line command. Move all text files that contain the word "sec" in their content to any single folder
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -rlw "sec" | xargs mv -t folder1
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ cd folder1
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/folder1
+$ ls
+2.txt  tf_2.txt  tf_3.txt
+```
+
+## 37. One-line command. Copy all text files that contain the word "sec" in their content to any single folder
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -rlw "sec" | xargs cp -t folder2
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ cd folder2
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/folder2
+$ ls
+1.txt  tf_2.txt  tf_3.txt
+```
+
 ## 38.
 ## 39.
 
