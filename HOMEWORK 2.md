@@ -142,22 +142,7 @@ the seConD 2
 ## 14. Make a text file tf_4.txt with 15 strings
 ```
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
-$ cat > tf_4.txt
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
+$ seq 15 > tf_4.txt
 
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
 $ cat tf_4.txt
@@ -252,9 +237,6 @@ the SeCoNd 2
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
 $ find $(pwd) -name tf_4.txt
 /d/github_lesson/terminal2/dir_1/inner_dir_1/tf_4.txt
-
-Абсолютный (он же полный) путь — это когда мы указываем все диски и папки, 
-в которые нужно зайти, чтобы добраться до нужного файла.
 ```
 
 ## 20. Clear the contents of the file tf_4.txt without deleting the file itself
@@ -290,6 +272,7 @@ $ find $(pwd) -iname "*tf*"
 /d/github_lesson/terminal2/dir_1/tf_1.txt
 /d/github_lesson/terminal2/dir_1/tf_2.txt
 ```
+
 ## 23. Find lines in files that contain the letter combination "sec" in the current folder
 есть файлы еще и в папке иннер дир 1 котора внутри
 ```
@@ -344,7 +327,7 @@ inner_dir_1/tf_3.txt:the sec 2
 tf_2.txt:the sec 3
 ```
 
-## 27.
+## 27. Find lines in files that contain the letter combination "second" in the current folder
 ```kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
 $ grep -r second
 inner_dir_1/tf_3.txt:the second 2
@@ -357,7 +340,7 @@ $ grep second ./*
 grep: ./inner_dir_1: Is a directory
 ./tf_2.txt:the second 2
 ```
-## 28.
+## 28. Find lines in files that contain the letter combination "second" IN ANY REGISTER in the current folder
 ```
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
 $ grep -i second ./*
@@ -375,10 +358,73 @@ $ grep -ir second ./*
 ./tf_2.txt:the seConD 2
 ```
 
-## 29.
-## 30.
-## 31.
-## 32.
+## 29. Find lines in files that contain the letter combination "second" in all subfolders
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -r second
+inner_dir_1/tf_3.txt:the second 2
+tf_2.txt:the second 2
+```
+or finding lines ONLY in subfolders:
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep second ./*/*
+./inner_dir_1/tf_3.txt:the second 2
+```
+
+## 30. Find only the path and file name in lines that contain the letter combination "second" in the current folder
+ ``-l`` - shows only **files** with matches, 
+ ``-s`` - to show without message
+````
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -ls second ./* $PWD
+./tf_2.txt
+```
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -r -l -s second $PWD
+/d/github_lesson/terminal2/dir_1/inner_dir_1/tf_3.txt
+/d/github_lesson/terminal2/dir_1/tf_2.txt
+```
+
+## 31. Find all lines in all files that do not contain the combination "second" in current directory
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -r -v second
+inner_dir_1/tf_3.txt:cat
+inner_dir_1/tf_3.txt:dog
+inner_dir_1/tf_3.txt:frog
+inner_dir_1/tf_3.txt:the sec 2
+inner_dir_1/tf_3.txt:the SeCoNd 2
+inner_dir_1/tf_5.txt:1
+inner_dir_1/tf_5.txt:2
+inner_dir_1/tf_5.txt:3
+inner_dir_1/tf_5.txt:4
+inner_dir_1/tf_5.txt:5
+inner_dir_1/tf_5.txt:6
+inner_dir_1/tf_5.txt:7
+inner_dir_1/tf_5.txt:8
+inner_dir_1/tf_5.txt:9
+inner_dir_1/tf_5.txt:10
+inner_dir_1/tf_5.txt:11
+inner_dir_1/tf_5.txt:12
+inner_dir_1/tf_5.txt:13
+inner_dir_1/tf_5.txt:
+tf_2.txt:the first 1
+tf_2.txt:the third 3
+tf_2.txt:the sec 3
+tf_2.txt:the seConD 2
+```
+
+## 32. Find only the NAMES and PATHS of files that DO NOT CONTAIN the combination "second"
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -rlv second $PWD
+/d/github_lesson/terminal2/dir_1/inner_dir_1/tf_3.txt
+/d/github_lesson/terminal2/dir_1/inner_dir_1/tf_5.txt
+/d/github_lesson/terminal2/dir_1/tf_2.txt
+```
+
 ## 33. 
 Вывести в терминал 4 последних строк любого текстового файла
 ```
