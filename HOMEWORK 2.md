@@ -515,8 +515,32 @@ $ ls
 1.txt  tf_2.txt  tf_3.txt
 ```
 
-## 38.
-## 39.
+## 38. One-line command. Find all lines with "sec" in all text files, copy and paste these lines into one new created text file.
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -rw "sec" | cat > sec.txt
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ cat sec.txt
+folder1/tf_2.txt:the sec 3
+folder1/tf_3.txt:the sec 2
+folder2/sec.txt:the sec 3
+folder2/sec.txt:the sec 2
+folder2/tf_2.txt:the sec 3
+folder2/tf_3.txt:the sec 2
+```
+
+## 39. One-line command. Delete text files that contain the word "sec" in their content.
+```
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -rl "sec" | xargs rm
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$ grep -rl "sec"
+
+kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
+$
+```
 
 ## 40. Display the line "Good job!!" in terminal
 Output a text string in the terminal
