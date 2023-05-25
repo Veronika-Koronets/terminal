@@ -1,6 +1,5 @@
 #!/bin/bash
 #
-
 echo "Создаем папку"
 mkdir folder1
 echo "mkdir folder1"
@@ -15,7 +14,6 @@ do
 	mkdir fol$number
 done
 
-
 echo "Заходим в любую папку"
 cd fol1
 echo "cd fol1"
@@ -23,7 +21,6 @@ echo "cd fol1"
 echo "Создаём 5 файлов"
 touch 1.txt 2.txt 3.txt 1.json 2.json
 echo "touch 1.txt 2.txt 3.txt 1.json 2.json"
-
 
 echo "Создаём 3 папки"
 mkdir subfol1 subfol2 subfol3
