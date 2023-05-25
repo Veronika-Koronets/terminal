@@ -239,3 +239,4 @@ And the responce is:
 <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
 ``
 ## 22. Write a bash script which does the steps above (# 3-8, # 13) ?????
+to run script for directory use `` ./scriptname.sh``, ``.scriptname.sh`` or ``bash scriptname.sh``
