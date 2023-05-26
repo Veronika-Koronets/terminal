@@ -52,6 +52,7 @@ $ mkdir dir_1_2_1 dir_1_2_2 dir_1_2_3
 
 ## 8. Show the contents of current folder elements
 Now we r located in **folder_1**. To see folder contents we using ```ls``` or ```ls -la``` commands
+``ls`` command shows the contents of the folder in the line. ``ls-l`` + attributes . ``ls -la`` - hidden files and attributes
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ ls
