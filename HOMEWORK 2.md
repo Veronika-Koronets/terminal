@@ -140,6 +140,9 @@ $ cat >> tf_2.txt
 the seConD 2
 ```
 ## 14. Make a text file tf_4.txt with 15 strings
+``seq`` command displays a sequence of integers/real numbers
+
+Also we can create a file with a sequence of numbers with ``seq 15 > file`` command
 ```
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1/inner_dir_1
 $ seq 15 > tf_4.txt
