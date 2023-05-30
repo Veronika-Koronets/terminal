@@ -215,7 +215,7 @@ Options can be:
   - `` -N `` to show string numbers
   After that
   - `` /name `` to find "name" in file
-  -`` q, Q, :q, :Q, ZZ`` — exit
+  - `` q, Q, :q, :Q, ZZ `` — exit
 ## 20. Show current date and time
 ```
 kv@kvPC MINGW64 /d/HW/folder/folder_1
@@ -231,16 +231,16 @@ kv@kvPC MINGW64 /d/HW/folder/folder_1
 $ curl -X POST http://162.55.220.72:5005/terminal-hw-request
 ``
 And the responce is:
-``
+```
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   232  100   232    0     0   2922      0 --:--:-- --:--:-- --:--:--  2974<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <title>404 Not Found</title>
 <h1>Not Found</h1>
 <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
-``
+```
 
-## 22. Write a bash script which does the steps above (# 3-8, # 13) ?????
+## 22. Write a bash script which does the steps above (# 3-8, # 13) 
 to run script for directory use `` ./scriptname.sh``, ``.scriptname.sh`` or ``bash scriptname.sh``
 
 kv@kvPC MINGW64 /d/Homework
