@@ -300,7 +300,7 @@ tf_2.txt:the seConD 2
 ```
 
 ## 25. Find lines in files that contain ONLY the letter combination "sec" in the current folder
-``./*`` - поиск в текущей директории
+``./*`` - current directory search
 ```
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
 $ grep -w "sec" ./*
