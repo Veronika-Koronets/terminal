@@ -429,8 +429,7 @@ $ grep -rlv second $PWD
 /d/github_lesson/terminal2/dir_1/tf_2.txt
 ```
 
-## 33. 
-Вывести в терминал 4 последних строк любого текстового файла
+## 33. Display the last 4 lines of any text file
 ```
 kv@kvPC MINGW64 /d/github_lesson/terminal2/dir_1
 $ tail -n 4 inner_dir_1/tf_3.txt
